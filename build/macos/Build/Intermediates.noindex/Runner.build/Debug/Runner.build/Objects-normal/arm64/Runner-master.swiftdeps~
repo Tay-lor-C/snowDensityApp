@@ -1,8 +1,0 @@
-version: "Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)"
-options: "fd10ae00e439d417958aef941805c3f66fa08c90bee29db11b59be9a09d89bfd"
-build_start_time: [1685133937, 400084000]
-build_end_time: [1685133937, 432111000]
-inputs:
-  "/Users/Taylor/Desktop/Code/flutterApps/snow_density_app/macos/Flutter/GeneratedPluginRegistrant.swift": !private [1685133927, 811844712]
-  "/Users/Taylor/Desktop/Code/flutterApps/snow_density_app/macos/Runner/AppDelegate.swift": !private [1684953162, 0]
-  "/Users/Taylor/Desktop/Code/flutterApps/snow_density_app/macos/Runner/MainFlutterWindow.swift": !private [1684953162, 0]

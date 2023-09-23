@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart'; // Import Cupertino for iOS specific theming
 
 void main() {
   runApp(DensityCalculatorApp());
@@ -8,8 +9,18 @@ class DensityCalculatorApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Snow Density Calculator',
+      title: 'Snow Calc',
       home: CalculatorScreen(),
+      theme: ThemeData(
+        // Material Theme properties
+        primarySwatch: Colors.blue, // Change this color as needed.
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+
+        // iOS specific theming
+        cupertinoOverrideTheme: CupertinoThemeData(
+          primaryColor: Colors.blue, // Change this color as needed.
+        ),
+      ),
     );
   }
 }

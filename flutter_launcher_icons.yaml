@@ -1,0 +1,33 @@
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png" # Path to your source icon image
+  android_gravity: "center"
+  ios_gravity: "center"
+  android_resolutions:
+    - "36x36"
+    - "48x48"
+    - "72x72"
+    - "96x96"
+    - "144x144"
+    - "192x192"
+    - "512x512"
+  ios_resolutions:
+    - "29x29"
+    - "40x40"
+    - "50x50"
+    - "57x57"
+    - "58x58"
+    - "60x60"
+    - "72x72"
+    - "76x76"
+    - "80x80"
+    - "87x87"
+    - "100x100"
+    - "114x114"
+    - "120x120"
+    - "144x144"
+    - "152x152"
+    - "167x167"
+    - "180x180"
+    - "1024x1024"
