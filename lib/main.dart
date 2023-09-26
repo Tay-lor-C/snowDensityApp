@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart'; // Import Cupertino for iOS specific theming
+import 'colors.dart';
 
 void main() {
   runApp(DensityCalculatorApp());
@@ -13,14 +14,19 @@ class DensityCalculatorApp extends StatelessWidget {
       home: CalculatorScreen(),
       theme: ThemeData(
         // Material Theme properties
-        primarySwatch: Colors.blue, // Change this color as needed.
+        primarySwatch: primary, // You can change this color as needed.
         visualDensity: VisualDensity.adaptivePlatformDensity,
-
-        // iOS specific theming
-        cupertinoOverrideTheme: CupertinoThemeData(
-          primaryColor: Colors.blue, // Change this color as needed.
-        ),
+        scaffoldBackgroundColor: backgroundColor,
       ),
+      // iOS specific theming
+      builder: (context, child) {
+        return CupertinoTheme(
+          data: CupertinoThemeData(
+            primaryColor: Color(0xFF0f2b55), // Set the primary color for iOS
+          ),
+          child: child!,
+        );
+      },
     );
   }
 }
@@ -68,26 +74,29 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
           children: <Widget>[
             TextField(
               controller: massController,
-              keyboardType: TextInputType.number,
+              keyboardType: TextInputType.numberWithOptions(decimal: true),
               decoration: InputDecoration(labelText: 'Mass (g)'),
             ),
             TextField(
               controller: tubeAreaController,
-              keyboardType: TextInputType.number,
+              keyboardType: TextInputType.numberWithOptions(decimal: true),
               decoration: InputDecoration(labelText: 'Tube Area (cm²)'),
             ),
             TextField(
               controller: heightController,
-              keyboardType: TextInputType.number,
+              keyboardType: TextInputType.numberWithOptions(decimal: true),
               decoration: InputDecoration(labelText: 'Height (cm)'),
             ),
             ElevatedButton(
               onPressed: _calculateDensity,
               child: Text('Calculate'),
             ),
-            Text('Water Equivalent (mm): $waterEquivalent'),
-            Text('Snow Density (kg/m³): $density'),
-            Text('Density (%): $percentDensity'), // Display percentage density
+            Text('Water Equivalent (mm): $waterEquivalent',
+                style: TextStyle(fontSize: 16),),
+            Text('Snow Density (kg/m³): $density',
+                style: TextStyle(fontSize: 16),),
+            Text('Density (%): $percentDensity',
+                style: TextStyle(fontSize: 16),), // Display percentage density
           ],
         ),
       ),
