@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		pz3wYRVVJpA1Q+3fd6j1ZzvYODo=
+		bKEp1rWeVmamEXng32t9kc58l2c=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,27 +54,43 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		S+qnsthQVmRTICOb0mQB+rudPYs=
+		BBbhF6DzdosHZRzRbw59K2hX+eY=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
-		ME0cAg6cl/bTZmwXEVgMugDccUI=
+		4GQ4J0cbG9lKFTiWUUB0/Ai04QI=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		oG5/OGn+vw7vp/nu5DUDoZJ4nFc=
+		cfK8MNNB+vcQOrZzMfhmWC5C/yw=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
-		vKJkVIcw+LGHFnKJGwrQwCREv68=
+		ERHmfY2IyoHD5uCvMlejqbbGuHE=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		P/GWruHwkPxZU7PvVaoOyhjpw9Y=
+		Ly49sCxAEeof7El0+9uobfPuOeU=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/equations.png</key>
+		<data>
+		UqOlPBeWyVCz1ugdgMH/2f269Ms=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
 		/CUoTuPQqqdexfyOT9lpJhV+2MQ=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/fonts/MathJax_Main-Bold.woff</key>
+		<data>
+		GzndJwh87EbrNrSwy5Z8eit1SK4=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/fonts/MathJax_Main-Regular.woff</key>
+		<data>
+		idLI0nRpPFpuJQ6W4qLibiVhkHk=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/fonts/MathJax_Size1-Regular.otf</key>
+		<data>
+		UVpILNR0mmc0aDk+FJt+hTSsn/E=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -86,7 +102,7 @@
 		</data>
 		<key>Frameworks/Flutter.framework/Flutter</key>
 		<data>
-		vFTsNC4PmLuu/QerERt5xbF2ZSo=
+		T3WHip6062ZNj0kxYSW0JSRFbcc=
 		</data>
 		<key>Frameworks/Flutter.framework/Headers/Flutter.h</key>
 		<data>
@@ -154,7 +170,7 @@
 		</data>
 		<key>Frameworks/Flutter.framework/Info.plist</key>
 		<data>
-		S48Lobfur2eEBEv36Sdv3Ahc0cw=
+		PvKbJN8F6cwRNXYEtolFhWP4QG0=
 		</data>
 		<key>Frameworks/Flutter.framework/Modules/module.modulemap</key>
 		<data>
@@ -162,15 +178,27 @@
 		</data>
 		<key>Frameworks/Flutter.framework/_CodeSignature/CodeResources</key>
 		<data>
-		QG1XUJ8wnyjQOcX0MPJS32mTP14=
+		RNNbvQ2oYp/rjJhY47Fmbmoikx4=
 		</data>
 		<key>Frameworks/Flutter.framework/icudtl.dat</key>
 		<data>
 		nMTZkkm9uooDDa8A2YJSyK73oP8=
 		</data>
+		<key>Frameworks/flutter_pdfview.framework/Info.plist</key>
+		<data>
+		nKAjIHRhsZwU+cUrU9jg7InpSAA=
+		</data>
+		<key>Frameworks/flutter_pdfview.framework/_CodeSignature/CodeResources</key>
+		<data>
+		QLI2qcTFTERMGzwzN/NUOj5Mz/g=
+		</data>
+		<key>Frameworks/flutter_pdfview.framework/flutter_pdfview</key>
+		<data>
+		xoI38H4fgO1Ij5uHrIs52be7Qz8=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		6gtsQcKLZ5pQjzzD0NDcK7NdEEM=
+		NTxFPgqeBm3p80di9yfsi3SKa70=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -178,7 +206,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		vNyAdmFLSp9pFMbxXez2FM0knnI=
+		E0OxbFjoIs21w668oZjW38fUBC4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -257,7 +285,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G4zPYp5cwPjiq+lIbS4rGw7QvKFraPbs0386c8MY89Y=
+			Teq8HU6AcvObPBAKctcwQtHI0xy7WsQ0iZS+SSzpYOg=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -271,35 +299,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1oAU8KLjtQHPj8jX/9kGGWH0E+CeoTkL6obz4x4boSw=
+			GhXSBHtFxNehO+LMwihV2VaXLeS0PKtppc/SUa5+Pss=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AK9VrT1vIYmP534P8JLRoc2lLJQbaGDpko1FyK+MCV0=
+			sBY9rKmrZzQLSTSAyHZZ/C9UHOLVXpw+9dm2bMZvuJQ=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sps95+7JukayebvM0TLjL1LW1VXXndpKp/O8tOm9ZR8=
+			ZoFkcfWRskrufDAqEiapcsX1lLx/bpcrqVc2uTfoGlg=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zX4DZFvESy3Ue3y2JvUcTsv1Whl6t3JBYotHrBZfviE=
+			45wcJ1VC+wVSVxm1W4XbhsxDB8YrwBBvYE3f+2rO21g=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DTaB4t3jXyvupgXfihixptXQxGsU2RprtCpIelrXQ8o=
+			OmwytdmtRoo+FzqQBt4h6twr/E3NNLBqh3DtgFmL8/s=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/equations.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bcjer2FZkvL2QrEKOxpkHud5rGcAMEiNVEv2fRqymn4=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
@@ -307,6 +342,27 @@
 			<key>hash2</key>
 			<data>
 			2YZbZxoJ1oPROoYwidiCXg9ho3aWzl19RIvIAjqmJFM=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/fonts/MathJax_Main-Bold.woff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iLmMrTaIkV5Q2lVVP/atGF4NzhNLR/F26RsQD4qbF1w=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/fonts/MathJax_Main-Regular.woff</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HLHDnqZC8mpN/tIwtK6hw8IYaJQh9unAp8GBFpPE+gc=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/fonts/MathJax_Size1-Regular.otf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UDZtcMWDUBCmRNpmmJhMJpr0ucH1KDwk6fZlRfXZ1B0=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -327,7 +383,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ui1WCKo3Sje1pzEVtQTzBniLevgOqrX8O19E4p5CWOs=
+			WyA3FSS96iFRqtURCVPlq4gjSA+Q7npXYGhQ3a9PGeE=
 			</data>
 		</dict>
 		<key>Frameworks/Flutter.framework/Headers/Flutter.h</key>
@@ -446,7 +502,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pMVoewIsUrWTYQoRZxGnxndqO3OTjlj05Mic4H+hhqM=
+			u1b2oFCBRkHVHktrbNgCH8oq2cX6xL1vN8h8xzg5+aI=
 			</data>
 		</dict>
 		<key>Frameworks/Flutter.framework/Modules/module.modulemap</key>
@@ -460,7 +516,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RTGXb6Z1iX8f1zYMvHhaco8xuh48RFsZz/T7qLjscEQ=
+			CkXF5DbIaKMe+yUiwB4v9Qe1RJ8e5ZTXqc/vH/1VE0E=
 			</data>
 		</dict>
 		<key>Frameworks/Flutter.framework/icudtl.dat</key>
@@ -470,11 +526,32 @@
 			rETMw/Yb9jC7IPuAQ9hs/kyJldBrRgCEQA20XXBJezA=
 			</data>
 		</dict>
+		<key>Frameworks/flutter_pdfview.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Lcid8H1wOeFmodUlI2LYsEfzrtY932NN4hNYP36c9Ks=
+			</data>
+		</dict>
+		<key>Frameworks/flutter_pdfview.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yy2XNawq9CivU1ONSMoUupSqScgKb+iikt72WqiDjmw=
+			</data>
+		</dict>
+		<key>Frameworks/flutter_pdfview.framework/flutter_pdfview</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EQPkheRNUx06FZ9UuSOvhyMAQ9ZcL2eIeZnX2XL7u3A=
+			</data>
+		</dict>
 		<key>embedded.mobileprovision</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sFmro64sG5KxYHK84nWApwJGojGS2XdLHOOWkwoYolQ=
+			p0qZqIdLpN2WTAbWCAfLORA/4wQBxZuTyE84cFTHdEs=
 			</data>
 		</dict>
 	</dict>

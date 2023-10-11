@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Include KaTeX library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js"></script>
+</head>
+<body>
+  <div id="equation">
+    <!-- Your LaTeX equation here -->
+    Water Equivalent (mm) = \( \frac{Mass\ of\ snow\ (g)}{Cross-section\ area\ of\ density\ cutter\ (cm^2)} \times 10 \)
+  </div>
+  <script>
+    // Render the equation using KaTeX
+    const equation = document.getElementById('equation');
+    katex.render(equation.textContent, equation);
+  </script>
+</body>
+</html>
+

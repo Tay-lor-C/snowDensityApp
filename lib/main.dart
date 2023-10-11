@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart'; // Import Cupertino for iOS specific theming
+import 'formulas_screen.dart';
 import 'colors.dart';
 
 void main() {
@@ -11,22 +11,31 @@ class DensityCalculatorApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Snow Calc',
-      home: CalculatorScreen(),
       theme: ThemeData(
-        // Material Theme properties
-        primarySwatch: primary, // You can change this color as needed.
+        primarySwatch: primary,
         visualDensity: VisualDensity.adaptivePlatformDensity,
         scaffoldBackgroundColor: backgroundColor,
       ),
-      // iOS specific theming
-      builder: (context, child) {
-        return CupertinoTheme(
-          data: CupertinoThemeData(
-            primaryColor: Color(0xFF0f2b55), // Set the primary color for iOS
+      home: DefaultTabController(
+        length: 2,
+        child: Scaffold(
+          appBar: AppBar(
+            title: Text('Snow Calc'),
+            bottom: TabBar(
+              tabs: [
+                Tab(text: 'Calculator'),
+                Tab(text: 'Formulas'),
+              ],
+            ),
           ),
-          child: child!,
-        );
-      },
+          body: TabBarView(
+            children: [
+              CalculatorScreen(),
+              FormulasScreen(),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
@@ -37,36 +46,28 @@ class CalculatorScreen extends StatefulWidget {
 }
 
 class _CalculatorScreenState extends State<CalculatorScreen> {
-  double mass = 0.0;
-  double tubeArea = 0.0;
-  double height = 0.0;
-  double waterEquivalent = 0.0;
-  double density = 0.0;
-  double percentDensity = 0.0; // Added percentage density
-
   final massController = TextEditingController();
   final tubeAreaController = TextEditingController();
   final heightController = TextEditingController();
 
+  double waterEquivalent = 0.0;
+  double density = 0.0;
+  double percentDensity = 0.0;
+
   void _calculateDensity() {
-    setState(() {
-      mass = double.tryParse(massController.text) ?? 0.0;
-      tubeArea = double.tryParse(tubeAreaController.text) ?? 0.0;
-      height = double.tryParse(heightController.text) ?? 0.0;
+    double mass = double.tryParse(massController.text) ?? 0.0;
+    double tubeArea = double.tryParse(tubeAreaController.text) ?? 0.0;
+    double height = double.tryParse(heightController.text) ?? 0.0;
 
-      waterEquivalent = (mass / tubeArea) * 10;
-
-      density = (waterEquivalent / height) * 1000;
-      percentDensity = (density / 10000) * 100; // Calculate percentage density
-    });
+    // Calculate water equivalent and density
+    waterEquivalent = (mass / tubeArea) * 10;
+    density = (waterEquivalent / height) * 100;
+    percentDensity = (density / 10);
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Snow Density Calculator'),
-      ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: Column(
@@ -88,15 +89,24 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
               decoration: InputDecoration(labelText: 'Height (cm)'),
             ),
             ElevatedButton(
-              onPressed: _calculateDensity,
+              onPressed: () {
+                _calculateDensity();
+                FocusScope.of(context).unfocus(); // Dismiss the keyboard
+              },
               child: Text('Calculate'),
             ),
-            Text('Water Equivalent (mm): $waterEquivalent',
-                style: TextStyle(fontSize: 16),),
-            Text('Snow Density (kg/m³): $density',
-                style: TextStyle(fontSize: 16),),
-            Text('Density (%): $percentDensity',
-                style: TextStyle(fontSize: 16),), // Display percentage density
+            Text(
+              'Water Equivalent (mm): ${waterEquivalent.toStringAsFixed(1)}',
+              style: TextStyle(fontSize: 16),
+            ),
+            Text(
+              'Snow Density (kg/m³): ${density.toStringAsFixed(1)}',
+              style: TextStyle(fontSize: 16),
+            ),
+            Text(
+              'Density (%): ${percentDensity.toStringAsFixed(1)}',
+              style: TextStyle(fontSize: 16),
+            ), // Display percentage density
           ],
         ),
       ),

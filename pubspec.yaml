@@ -24,6 +24,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_pdfview: ^1.2.7
+  
 
   cupertino_icons: ^1.0.2
   flutter_launcher_icons: ^0.13.1
@@ -34,7 +36,18 @@ dev_dependencies:
     sdk: flutter
 
 flutter:
+  assets:
+    - assets/equations.png
   uses-material-design: true
+  fonts:
+    - family: "MathJax_Main"
+      fonts:
+        - asset: "fonts/MathJax_Main-Regular.woff"
+        - asset: "fonts/MathJax_Main-Bold.woff"
+    - family: "MathJax_Size1"
+      fonts:
+        - asset: "fonts/MathJax_Size1-Regular.otf"
+
 
 flutter_icons:
   image_path_iOS: "ios/Assets.xcassets/AppIcon.appiconset"
